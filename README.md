@@ -1,2 +1,2 @@
 # blogs
-some thinking during development
+some thinking about development
