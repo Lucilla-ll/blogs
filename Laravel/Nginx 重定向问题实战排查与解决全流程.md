@@ -156,7 +156,7 @@ private function setMyRedirectHeader(Request $request, $client_ip, $redirects_nu
 
 
 
-![image-20250710175858081](C:\Users\btcc\AppData\Roaming\Typora\typora-user-images\image-20250710175858081.png)
+![image-20250710175858081](../images/image-20250710175858081.png)
 
 进入下一次请求：https://www.abc.com/help-Centre/
 
@@ -164,7 +164,7 @@ private function setMyRedirectHeader(Request $request, $client_ip, $redirects_nu
 
 但是很明显，现在这个Location不属于上面提到的任何一种情况
 
-![image-20250710180138270](C:\Users\btcc\AppData\Roaming\Typora\typora-user-images\image-20250710182328879.png)
+![image-20250710180138270](../images/image-20250710182328879.png)
 
 接下来请求转到 `https:/www.abc.com/help-centre`（只有一个斜杠），浏览器会把 `www.abc.com` 当作路径，服务器收到的 `REQUEST_URI` 是 `/www.abc.com/help-centre`，最终重定向到 `/www.abc.com/help-centre/`，浏览器拼成 `https://www.abc.com/www.abc.com/help-centre/`
 
